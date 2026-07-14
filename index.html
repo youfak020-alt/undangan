@@ -167,7 +167,7 @@
   /* ========================================================= */
   /* ===== SECTIONS ========================================== */
   /* ========================================================= */
-  section{padding:96px 22px;max-width:760px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+  section{padding:96px 22px;max-width:760px;margin:0 auto;text-align:center;position:relative;overflow-x:clip;overflow-y:visible}
   /* jaga agar teks & elemen tak melebihi lebar layar */
   h2,h3,p,.script,.big,.cover-names,.quote,.eyebrow{overflow-wrap:break-word;word-break:break-word;max-width:100%}
   img,svg{max-width:100%}
@@ -197,10 +197,11 @@
     padding-top:130px;overflow:hidden;
   }
   .hero .big{
-    font-size:clamp(72px,24vw,150px);color:var(--gold-dark);
+    font-size:clamp(54px,18vw,120px);color:var(--gold-dark);
     background:linear-gradient(100deg,var(--gold-dark),var(--rose),var(--gold),var(--gold-dark));
     background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
     animation:shine 6s linear infinite;
+    white-space:nowrap;overflow:visible;display:inline-block;padding:0 4px;
   }
   .hero .date{margin-top:16px;letter-spacing:5px;font-size:15px;color:var(--soft);font-family:'Cinzel',serif}
   .hero .basmalah{font-size:22px;color:var(--gold-dark);opacity:.9}
