@@ -609,7 +609,7 @@
   const io = new IntersectionObserver(es=>{
     es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.14});
-  document.querySelectorAll('.reveal,.stagger').forEach(el=>io.observe(el));
+  document.querySelectorAll('.reveal,.stagger,.photo-frame').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
